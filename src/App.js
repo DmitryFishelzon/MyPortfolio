@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import AboutMeSection from './components/AboutMeSection';
 import ProjectsSection from './components/ProjectsSection';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -19,11 +20,12 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<HeroSection />} exact />
+          <Route path="/" element={<HeroSection />} />
           <Route path="/about" element={<AboutMeSection />} />
           <Route path="/projects" element={<ProjectsSection />} />
           <Route path="/contact" element={<ContactSection />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,13 +1,33 @@
 .projects-section {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    color: black;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .project-item {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: black;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: black;
 }
